@@ -17,7 +17,7 @@ namespace web_api_app_test.Controllers
         {
             if (string.IsNullOrWhiteSpace(name))
                 return NotFound();
-            return $"Hello {name}!";
+            return $"Hello, my dear {name}!";
         }
     }
 }
