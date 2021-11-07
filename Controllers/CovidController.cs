@@ -23,7 +23,8 @@ namespace web_api_app_test.Controllers
                 DateOfBirth = DateTime.Now.AddYears(-20),
                 PassportNumber = 1234567890,
                 CertNumber = 94700000,
-                VaccineNumber = _rand.Next(100000000)
+                VaccineNumber = _rand.Next(100000000),
+                DefaultVaccineNumber = "9470000058260899"
             };
 
             return View(_model);
@@ -40,7 +41,8 @@ namespace web_api_app_test.Controllers
                 DateOfBirth = dateOfBirth,
                 PassportNumber = passportNumber,
                 CertNumber = 94700000,
-                VaccineNumber = _rand.Next(100000000)
+                VaccineNumber = _rand.Next(100000000),
+                DefaultVaccineNumber = "9470000058260899"
             };
 
             return View("Index", _model);

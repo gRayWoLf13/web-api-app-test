@@ -46,7 +46,14 @@
             <h4 class="title-h4 white status-title mt-12">
                 <span class="num-symbol">№</span>
                 <span class="unrz">
-                    @Model.CertNumber.ToString()@Model.VaccineNumber.ToString("00000000")
+                    @if (!string.IsNullOrEmpty(Model.DefaultVaccineNumber))
+                    {
+                        @Model.DefaultVaccineNumber
+                    }
+                    else
+                    {
+                        @Model.CertNumber.ToString()@Model.VaccineNumber.ToString("00000000")
+                    }
                 </span>
             </h4>
         </div>

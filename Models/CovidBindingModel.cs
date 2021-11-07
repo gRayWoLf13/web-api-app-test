@@ -12,5 +12,6 @@ namespace web_api_app_test.Models
         public long PassportNumber { get; set; }
         public long CertNumber { get; set; }
         public long VaccineNumber { get; set; }
+        public string DefaultVaccineNumber { get; set; }
     }
 }
