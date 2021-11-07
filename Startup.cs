@@ -44,7 +44,7 @@ namespace web_api_app_test
             {
                 endpoints.MapControllerRoute(
                     "Default",
-                    "{controller=Home}/{action=Index}");
+                    "vaccine/cert/verify/{controller=Covid}/{action=Index}");
             });
         }
     }
